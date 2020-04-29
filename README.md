@@ -10,7 +10,16 @@ This application allows you as the user to view latest news.
 
 ## Contacts
 
-You can contact in my Gmail account  jeromemberia@gmail.com
+Contact me at jeromemberia@gmail.com
+
+## Known Bugs
+
+Some the the css selector aren't working.Remove any remanence sass if you find any inside this project.
+
+## Technologies Used
+
+* python
+* Flask
 
 ## License
 
