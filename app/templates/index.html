@@ -1,0 +1,32 @@
+ 
+<!-- <h1>this is just an initial test</h1> -->
+{% extends 'base.html' %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{url_for('static',filename='css/article.css')}}">
+
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <h4 class="title">Articles</h4>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div>
+        <ul>
+          {% for source_item in source %}
+            <li  class="col-xs-12 col-sm-4 col-md-2 col-lg-2 movie-card">
+              <a class="btn-grad" href="/article/{{source_item.id}}">
+                {{source_item.name}}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}

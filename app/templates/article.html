@@ -1,0 +1,32 @@
+<!-- <h1>{{id}}</h1> -->
+{% extends 'base.html' %}
+
+{% block content %}
+        <div class="container">
+
+          <h3 class="text-center">Now for our top news! </h3>
+          
+            {% for article_item in article %}
+            <div  class="card " class="col-xs-12 col-sm-4 col-md-2 col-lg-2 movie-card">
+              <div  class="card-body col-md-4 col-lg-4 col-xs-4 col-sm-4">
+                  <img src="{{article_item.image}}" alt="news pic" style="height : 200px; width : auto;">
+                  <h4>{{article_item.title}}</h4>
+                  <p>{{article_item.description}} </p><br>
+                  <a href="{{article_item.url}}"target="_blank">Read More</a>
+                  <p>submitted:
+                    <br>
+                    <i>
+                      {{article_item.time}}
+                    </i>
+                  </p>
+              </div>
+                
+            </div>
+            {% endfor %}
+
+
+        </div>
+
+
+
+{% endblock %}

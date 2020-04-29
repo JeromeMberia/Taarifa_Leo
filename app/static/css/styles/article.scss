@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    font-family: Arial;
+    padding: 2em;
+    background-color: white;
+}
+
+.title1{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container1{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row{
+   margin-top: 2em;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 4em;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%)
+}
+.btn-grad:hover{ 
+    background-position: right center; 
+}
+
+.title1{
+    font-family: 'Times New Roman';
+    font-size: xx-large;
+}

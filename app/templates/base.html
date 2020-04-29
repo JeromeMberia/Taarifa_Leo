@@ -1,0 +1,19 @@
+{% extends 'bootstrap/base.html' %}
+
+<!-- entering the navbar -->
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock %}    
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+  </head>
+  <body>
+    {% block content %}
+
+    {% endblock %}
+  </body>
+</html>
