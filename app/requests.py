@@ -1,6 +1,5 @@
 import urllib.request,json
 from .models import Source, Article
-from newsapi import NewsApiClient
 
 # Getting api key
 api_key = None
@@ -9,6 +8,7 @@ api_key = None
 source_url = None
 
 def configure_request(app):
+
     global api_key, source_url
     api_key = app.config['NEWS_API_KEY']
     source_url = app.config['NEWS_SOURCES_URL']
