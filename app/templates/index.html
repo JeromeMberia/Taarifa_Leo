@@ -5,12 +5,12 @@
 {% block styles %}
   {{ super() }}
   <link rel="stylesheet" href="{{url_for('static',filename='css/article.css')}}">
-
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,600&display=swap" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
   <div class="container">
-    <div class="row">
+    <div id="pol" class="row">
       <h4 class="title">Articles</h4>
     </div>
     <br>
